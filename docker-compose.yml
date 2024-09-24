@@ -1,0 +1,12 @@
+﻿services:
+  client:
+    image: client
+    build:
+      context: .
+      dockerfile: Client/Dockerfile
+
+  server:
+    image: server
+    build:
+      context: .
+      dockerfile: Server/Dockerfile
