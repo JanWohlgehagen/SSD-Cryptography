@@ -15,7 +15,7 @@ namespace Server
         {
             _logger = logger;
             _encryptor = new TinyEncryptor();
-            _key = _encryptor.GenerateAES256Key();
+            _key = "ThisIsA256BitKeyOf32CharsLengthA"u8.ToArray();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

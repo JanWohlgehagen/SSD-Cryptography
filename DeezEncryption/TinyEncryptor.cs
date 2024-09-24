@@ -38,10 +38,4 @@ public class TinyEncryptor
         
         return decryptedMessage;
     }
-
-    // Generates a 256-bit AES key
-    public byte[] GenerateAES256Key()
-    {
-        return "ThisIsA256BitKeyOf32CharsLengthA"u8.ToArray();
-    }
 }

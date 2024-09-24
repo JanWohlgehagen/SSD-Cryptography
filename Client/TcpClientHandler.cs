@@ -16,7 +16,7 @@ public class TcpClientHandler
 
         // Initialize the encryptor and generate a key
         _encryptor = new TinyEncryptor();
-        _key = _encryptor.GenerateAES256Key();
+        _key = "ThisIsA256BitKeyOf32CharsLengthA"u8.ToArray();
     }
 
     public async Task SendMessageAsync(string message)
